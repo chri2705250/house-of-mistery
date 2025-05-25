@@ -1,0 +1,116 @@
+<!DOCTYPE html><html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>House of Mistery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0e0e0e;
+      color: #eaeaea;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1a1a1a;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #111;
+      padding: 1rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #eaeaea;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 2rem;
+    }
+    .hidden {
+      display: none;
+    }
+    .episode {
+      margin-bottom: 2rem;
+    }
+    .survey label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(section => {
+        section.classList.add('hidden');
+      });
+      document.getElementById(id).classList.remove('hidden');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>House of Mistery</h1>
+    <p>Serie Misteriosa</p>
+  </header>
+  <nav>
+    <a href="#" onclick="showSection('home')">Home</a>
+    <a href="#" onclick="showSection('stagione1')">Stagione 1</a>
+    <a href="#" onclick="showSection('stagione2')">Stagione 2</a>
+    <a href="#" onclick="showSection('stagione3')">Stagione 3</a>
+    <a href="#" onclick="showSection('stagione4')">Stagione 4</a>
+    <a href="#" onclick="showSection('film')">Film</a>
+    <a href="#" onclick="showSection('stagione5')">Stagione 5?</a>
+  </nav>  <section id="home">
+    <h2>Benvenuti nel sito ufficiale di House of Mistery</h2>
+    <p>Scopri tutti gli episodi, le stagioni e i misteri di questa incredibile serie.</p>
+  </section>  <section id="stagione1" class="hidden">
+    <h2>Stagione 1</h2>
+    <!-- Episodi da 1 a 20 -->
+    <div class="episode"><h3>Episodio 1 – La casa nel centro</h3><p>Kelly salva Sarah da un incidente. Sarah la ringrazia e iniziano a parlare. Kelly scopre qualcosa sulla misteriosa "Casa di Anubis", situata proprio nel centro di Saffron Falls.</p></div>
+    <div class="episode"><h3>Episodio 2 – Il Medaglione</h3><p>Sarah inizia a sospettare che Kelly sia la Prescelta, nata il 7 luglio alle 7. Decide di donarle il Medaglione dell’Occhio di Horus, rivelando una profezia antica legata alla maledizione di Anubis.</p></div>
+    <div class="episode"><h3>Episodio 3 – Sibuna</h3><p>Kelly coinvolge quattro amici fidati: Leo, Amber, Max e Nora. Fondano il club "Sibuna" e giurano di mantenere il segreto e scoprire la verità sulla casa e sulla maledizione.</p></div>
+    <div class="episode"><h3>Episodio 4 – Passaggi Segreti</h3><p>Durante una perlustrazione notturna nella casa, il gruppo scopre il primo dei passaggi segreti costruiti da Robert, il padre di Sarah. All’interno trovano indizi sulla Maschera di Anubis.</p></div>
+    <div class="episode"><h3>Episodio 5 – La Mappa</h3><p>Amber trova una mappa antica nascosta in una parete. Seguirla li porta a una cripta nascosta sotto la casa con simboli egizi misteriosi e una scritta: “Solo la Prescelta potrà completare il rituale”.</p></div>
+    <div class="episode"><h3>Episodio 6 – La Profezia</h3><p>Sarah racconta tutta la storia: i suoi genitori rubarono tre oggetti dalla tomba di Tutankhamon. Anubis li maledisse e solo la Prescelta può salvarli unendo la Coppa e completando il rituale.</p></div>
+    <div class="episode"><h3>Episodio 7 – Il Primo Pezzo</h3><p>Il gruppo trova il primo pezzo della Coppa di Ank in una statua in giardino. Ma scatenano una trappola e Leo rimane quasi intrappolato. La casa inizia a mostrare strani comportamenti paranormali.</p></div>
+    <div class="episode"><h3>Episodio 8 – Gli Incubi</h3><p>Kelly inizia ad avere sogni premonitori e visioni della tomba di Anubis. La Maschera parla nei sogni, guidandola verso il secondo pezzo nascosto nel camino antico.</p></div>
+    <div class="episode"><h3>Episodio 9 – Tradimenti</h3><p>Max inizia a sospettare che uno di loro nasconda qualcosa. Amber sembra sapere troppo. La tensione nel gruppo cresce, ma scoprono che è sotto l’effetto della casa, che manipola i loro pensieri.</p></div>
+    <div class="episode"><h3>Episodio 10 – Il Terzo Pezzo</h3><p>Scoprono che il terzo pezzo si trova nella scuola abbandonata dietro la casa. Di notte entrano e affrontano un altro enigma. Max rischia grosso ma il gruppo lo salva in extremis.</p></div>
+    <div class="episode"><h3>Episodio 11 – La Prescelta</h3><p>Kelly tocca la Maschera vera nascosta in un altare e ha una visione potente. Vede Anubis, i suoi poteri e scopre che la gemma mancante è custodita da una discendente del faraone.</p></div>
+    <div class="episode"><h3>Episodio 12 – Il Quarto Pezzo</h3><p>Un indovinello li conduce in biblioteca. In un libro falso, trovano il quarto pezzo e un antico diario di Eric Smithe che racconta il furto degli oggetti sacri in Egitto.</p></div>
+    <div class="episode"><h3>Episodio 13 – Il Fantasma di Ada</h3><p>Ada appare in sogno a Sarah e a Kelly. Rivela che solo chi crede veramente nella luce può salvare le anime perdute. Il quinto pezzo è in soffitta, sorvegliato da uno spirito.</p></div>
+    <div class="episode"><h3>Episodio 14 – L’Amuleto</h3><p>Leo trova un amuleto nella cantina che protegge dalle energie oscure della casa. Lo usano per proteggere Kelly mentre affrontano la ricerca del sesto pezzo.</p></div>
+    <div class="episode"><h3>Episodio 15 – Il Traditore</h3><p>Si scopre che Max è stato manipolato da Anubis tramite incubi. Ha nascosto indizi e rallentato il gruppo. Ma si redime salvando Amber da una trappola letale nella serra.</p></div>
+    <div class="episode"><h3>Episodio 16 – Il Sesto Pezzo</h3><p>Il sesto pezzo si trova sotto il lago nel parco della città. Nora riesce a recuperarlo grazie a una leggenda locale che si collega alla maledizione.</p></div>
+    <div class="episode"><h3>Episodio 17 – L’Occhio si illumina</h3><p>Il Medaglione inizia a brillare quando Kelly si avvicina alla maschera. Scoprono che l’Occhio serve da guida per l’ultimo pezzo della coppa e per la gemma perduta.</p></div>
+    <div class="episode"><h3>Episodio 18 – Il Settimo Pezzo</h3><p>Guidati da un ultimo enigma inciso sotto un tavolo, trovano il settimo pezzo dietro il quadro di famiglia degli Smithe. La Coppa si ricompone da sola tra le mani di Kelly.</p></div>
+    <div class="episode"><h3>Episodio 19 – La Maledizione</h3><p>Durante la notte, la casa si ribella. Ombre, voci e apparizioni tentano di fermare Kelly. Ma con il supporto del club, riescono a prepararsi per il rituale finale.</p></div>
+    <div class="episode"><h3>Episodio 20 – La Prescelta</h3><p>Kelly inserisce la gemma nella maschera, versa l’acqua sacra nella coppa e pronuncia le parole del rituale. La maledizione viene spezzata. I genitori di Sarah sono liberati. Schermo nero: “Continua...” SIBUNA.</p></div>
+  </section>  <section id="stagione2" class="hidden">
+    <h2>Stagione 2</h2>
+    <p>Prossimamente...</p>
+  </section>  <section id="stagione3" class="hidden">
+    <h2>Stagione 3</h2>
+    <p>Prossimamente...</p>
+  </section>  <section id="stagione4" class="hidden">
+    <h2>Stagione 4</h2>
+    <p>Prossimamente...</p>
+  </section>  <section id="film" class="hidden">
+    <h2>Film</h2>
+    <p>Prossimamente...</p>
+  </section>  <section id="stagione5" class="hidden">
+    <h2>Stagione 5?</h2>
+    <p>Vuoi una nuova stagione?</p>
+    <div class="survey">
+      <label><input type="radio" name="vote"> Sì</label>
+      <label><input type="radio" name="vote"> No</label>
+    </div>
+  </section>
+</body>
+</html>
